@@ -13,8 +13,14 @@ const LinhaDoTempo = props => {
           <p className="previsao__data">{props.data}</p>
           <p className="previsao__resumo">{props.previsao}</p>
           <img className="previsao__img" src={props.img} />
-          <p className="previsao-temperatura">{props.maxgrado}</p>
-          <p className="previsao-temperatura">{props.mingrado}</p>
+          <table className="previsao-temperatura">
+            <tr className="previsao-temperatura__linha">
+              <td>Máxima</td>
+              <td>{props.maxgrado}</td>
+              <td>Mínima</td>
+              <td>{props.mingrado}</td>
+            </tr>
+          </table>
         </div>
       </div>
       </div>
@@ -26,7 +32,7 @@ const LinhaDoTempo = props => {
     
 function App() {
   return (
-    <div className="App">
+    <div className="previsao-container">
         <LinhaDoTempo
           data="31/05/2019"
           previsao="Ensolarado"

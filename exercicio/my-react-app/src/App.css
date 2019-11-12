@@ -23,7 +23,7 @@
 
 .previsao-container {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-around;
   max-width: 560px;
   margin: 0 auto;
